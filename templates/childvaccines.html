@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+{% load static %} 
+
+<div class="container margin-bottom-30"> 
+        <!-- Top Stories -->
+            <div class="headline">
+              <h2>Child Vaccines</h2>
+            </div>
+            <div class="row" id="news"> 
+              <!-- Top Stories include file --> 
+                    
+                        <div class="col-sm-3 news-item">
+                          <div class="news-img">
+                            <a href="{% url 'polio' %}" class="su-link"
+                             data-ua-action="hp-news" title="Photo Credit: Francois Mori">
+                                
+                             <img src="{% static 'images/Polio.jpg' %}"  
+                             class="img-responsive" alt="Marine and Jean Le Pen" /></a>
+                          </div>
+                          <div class="news-text">
+                            <h3><a href="{% url 'polio' %}" 
+                            class="su-link" data-ua-action="hp-news">Polio Vaccine</a></h3>
+                            <p>View Polio vaccination progress.</p>
+                          </div>
+                        </div>
+                    
+                        
+                        <div class="col-sm-3 news-item">
+                          <div class="news-img">
+                            <a href="#" class="su-link"
+                             data-ua-action="hp-news" title="Photo Credit: Linda Cicero">
+                                 
+                             <img src="{% static 'images/pertussis-bicubic.png' %}" class="img-responsive" alt="Stanford students planting trees" /></a>
+                          </div>
+                          <div class="news-text">
+                            <h3><a href="#"
+                            class="su-link" data-ua-action="hp-news">DPT Vaccine</a></h3>
+                            <p>View progress Pentavalent vaccines</p>
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-3 news-item">
+                          <div class="news-img">
+                            <a href="#" class="su-link"
+                            data-ua-action="hp-news" title="Photo Credit: shutterstock">
+                                
+                            <img src="{% static 'images/poliodrops.jpg' %}" class="img-responsive" 
+                            alt="Black student " /></a>
+                          </div>
+                          <div class="news-text">
+                            <h3><a href="#"
+                            class="su-link" data-ua-action="hp-news">Tuberculosis Vaccine</a></h3>
+                            <p>View Tuberculosis vaccine status.</p>
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-3 news-item">
+                          <div class="news-img">
+                            <a href="#" class="su-link"
+                             data-ua-action="hp-news" title="Photo Credit: Linda Cicero">
+                                 
+                             <img src="{% static 'images/measles.png' %}" class="img-responsive" alt="Stanford students planting trees" /></a>
+                          </div>
+                          <div class="news-text">
+                            <h3><a href="#"
+                            class="su-link" data-ua-action="hp-news">Measles Vaccine</a></h3>
+                            <p>View Measles vaccine status</p>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+        
+
+{% endblock %}
